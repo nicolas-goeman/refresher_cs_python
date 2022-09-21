@@ -25,3 +25,6 @@ def most_frequent(data: list[str]) -> str:
 
 def backward_string(val: str) -> str:
     return val[::-1]
+
+def check_coverage() -> None:
+    pass

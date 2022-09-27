@@ -39,7 +39,7 @@ jobs:
         #   pip install coverage[toml]
         run: |
           PYTHONPATH=dev/ poetry run python -m pytest -v --cov=dev/ tests/ --cov-fail-under=80
-          poetry add coverage[toml]
+          pip install coverage[toml]
         
 
       # - name: Run Coverage

@@ -39,7 +39,7 @@ def test_most_frequent() -> None:
     assert most_frequent(["a", "a", "bi", "bi", "bi"]) == "bi"
 
 def test_backward_string() -> None:
-    """_summary_
+    """Test back_string function
     """
     assert backward_string('val') == 'lav'
     assert backward_string('') == ''

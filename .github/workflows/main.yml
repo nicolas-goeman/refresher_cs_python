@@ -16,18 +16,18 @@ jobs:
       - name: Install and configure Poetry
         uses: snok/install-poetry@v1
 
-      # - name: Cache Poetry virtualenv
-      #   uses: actions/cache@v1
-      #   id: cache
-      #   with:
-      #     path: ~/.virtualenvs
-      #     key: poetry-$
-      #     restore-keys: |
-      #       poetry-$
-      # - name: Config Github URL to download Private Repo
-      #   env:
-      #     GITHUB_TOKEN: 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
-      #   run: git config --global url."https://$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
+      - name: Cache Poetry virtualenv
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: ~/.virtualenvs
+          key: poetry-$
+          restore-keys: |
+            poetry-$
+      - name: Config Github URL to download Private Repo
+        env:
+          GITHUB_TOKEN: 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
+        run: git config --global url."https://$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
 
       - name: Install Dependencies using Poetry
         run: poetry install

@@ -190,6 +190,10 @@ cython_debug/
 *.code-workspace
 
 # Ignore docs folder
-docs/
+docs/_build
+docs/_static
+docs/_templates
+docs/dev.rst
+docs/modules.rst
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python

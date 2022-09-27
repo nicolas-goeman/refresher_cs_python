@@ -35,10 +35,10 @@ jobs:
 
       - name: Run pytest
         # run: PYTHONPATH=src/ poetry run pytest
-        run: PYTHONPATH=src/ poetry run python -m pytest -v --cov=src/ tests/
+        run: PYTHONPATH=dev/ poetry run python -m pytest -v --cov=dev/ tests/
 
       - name: Run Coverage
-        run: PYTHONPATH=src/ poetry run pytest --cov .
+        run: PYTHONPATH=dev/ poetry run pytest --cov .
 
 #       - name: Generate XML Report
 #         run: PYTHONPATH=src/ poetry run python -m coverage xml

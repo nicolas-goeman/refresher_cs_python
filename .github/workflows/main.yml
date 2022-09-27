@@ -29,9 +29,9 @@ jobs:
       #     GITHUB_TOKEN: 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
       #   run: git config --global url."https://$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
 
-      # - name: Install Dependencies using Poetry
-      #   run: poetry install
-      #   if: steps.cache.outputs.cache-hit != 'true'
+      - name: Install Dependencies using Poetry
+        run: poetry install
+        if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Run pytest
         # run: |

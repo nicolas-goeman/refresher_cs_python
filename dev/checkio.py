@@ -77,6 +77,8 @@ def backward_string(val: str) -> str:
     """
     return val[::-1]
 
-def check_coverage() -> None:
+def check_coverage() -> int:
     """Checks if the GitHub coverage badge works
     """
+    return 42
+    

@@ -34,5 +34,5 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
       - name: Analysing the code with pylint
         run: |
-          poetry run pylint ./dev --fail-under 5
+          poetry run pylint ./python_labs --fail-under 5
           poetry run pylint ./tests --fail-under 5

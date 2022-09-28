@@ -1,7 +1,7 @@
 """
 Pytest tests file
 """
-from dev.checkio import *
+from python_labs.checkio import *
 
 def test_mult_two() -> None:
     """_summary_

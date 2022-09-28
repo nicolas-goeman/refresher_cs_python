@@ -1,7 +1,8 @@
-dev
-===
+python_labs
+===========
 
 .. toctree::
    :maxdepth: 4
 
-   dev
+   python_labs
+   tests

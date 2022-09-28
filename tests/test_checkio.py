@@ -1,13 +1,18 @@
 """
 Pytest tests file
 """
-from python_labs.checkio import *
+
+from python_labs.checkio import mult_two, first_word, is_acceptable_password
+
+from python_labs.checkio import number_length, most_frequent, backward_string
+
 
 def test_mult_two() -> None:
     """_summary_
     """
     assert mult_two(3, 2) == 6
     assert mult_two(0, 1) == 0
+
 
 def test_first_word() -> None:
     """_summary_
@@ -17,12 +22,14 @@ def test_first_word() -> None:
     assert first_word("greeting from CheckiO Planet") == "greeting"
     assert first_word("hi") == "hi"
 
+
 def test_is_acceptable_password() -> None:
     """_summary_
     """
     assert is_acceptable_password('short') is False
     assert is_acceptable_password('muchlonger') is True
     assert is_acceptable_password('ashort') is False
+
 
 def test_number_length() -> None:
     """_summary_
@@ -32,11 +39,13 @@ def test_number_length() -> None:
     assert number_length(4) == 1
     assert number_length(44) == 2
 
+
 def test_most_frequent() -> None:
     """_summary_
     """
     assert most_frequent(["a", "b", "c", "a", "b", "a"]) == "a"
     assert most_frequent(["a", "a", "bi", "bi", "bi"]) == "bi"
+
 
 def test_backward_string() -> None:
     """ Test back_string() function

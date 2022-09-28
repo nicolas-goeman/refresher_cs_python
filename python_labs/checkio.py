@@ -2,6 +2,7 @@
 This is a module that contains multiple simple functions.
 """
 
+
 def mult_two(int_a: int, int_b: int) -> int:
     """Multiply two integers
 
@@ -39,7 +40,7 @@ def is_acceptable_password(password: str) -> bool:
     return len(password) > 6
 
 
-def number_length(a: int) -> int: #pylint: disable=invalid-name
+def number_length(a: int) -> int:  # pylint: disable=invalid-name
     """_summary_
 
     Args:
@@ -77,8 +78,8 @@ def backward_string(val: str) -> str:
     """
     return val[::-1]
 
+
 def check_coverage() -> int:
     """Checks if the GitHub coverage badge works
     """
     return 42
-    
